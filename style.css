@@ -1,14 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
-
+section{
+    margin-bottom: 50px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+} 
+h1{
+    padding-top: 50px;
+}
 .banner{
     background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,.5)),url(images/banner-img2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+}
+.name{
+    color: tomato;
+}
+
+.section h1{
+    
+    font-size: 40px;
+    text-align: center;
+}
+.section p{
+    text-align: center;
+    color: gray;
 }
 .banner-container{
     width: 60%;
@@ -21,7 +48,7 @@ body{
     color: white;
 }
 .banner-container h1{
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 .link-btn{
@@ -37,49 +64,112 @@ body{
     width: 60%;
     margin: auto;
 }
-.center{
-    text-align: center;
-}
-.donate-sec h1{
+
+
+.donation-amount{
     
-    font-size: 40px;
-    text-align: center;
-}
-.donate-sec p{
-    text-align: center;
-    font-size: 18px;
-}
-.donation-amount span{
-    font-size: 50px;
-    padding:20px 15px;
-    margin:20px 23px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+
 }
 .amount{
     color:gray ;
-    
+    font-size: 50px;
+    padding:20px 15px;
     background-color: gainsboro;
     
 }
 
-.hilighed-amount{
+#highlighted-amount{
     border: 1px solid red;
     color: red;
-    background-color: burlywood;
+    background-color: cornsilk;
 }
-.form {
-    width: 90%;
+.donate {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
-.form input{
+.donate input{
     text-align: center;
     padding: 14px 0;
     border: none;
     box-shadow: 2px 2px 2px gray;
     margin: 20px 0;
 }
-.form button{
+.donate button{
+    width: fit-content;
+    margin: auto;
     border: none;
     display: block;
+    cursor: pointer;
+}
+.plan{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.plan-box{
+    padding: 18px 10px;
+    border-radius: 6px;
+}
+.plan p{
+    text-align: left;
+}
+
+#box1{
+    background-color: lightskyblue;
+}
+#box2{
+    background-color: lightpink;
+}
+#box3{
+    background-color: cornsilk;
+}
+.form-sec{
+    width: 60% ;
+    margin: auto;
+}
+.form{
+    width: 90%;
+    height: 160px;
+    background-color: rgb(209, 174, 174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form input{
+    padding:15px 20px;
+    background-color: gainsboro;
+    border: none;
+}
+.form button{
+    border: none;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: black;
+    color: white;
+    margin-top: 80px;
+}
+.project-sec{
+    width: 80%;
+    margin: auto;
+}
+.project{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.project img{
+    width: 48%;
+}
+.project-sec p{
+    text-align: justify;
 }
